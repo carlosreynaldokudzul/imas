@@ -1,0 +1,13 @@
+CREATE DATABASE node_mysql_crud_db;
+CREATE  TABLE IF NOT EXISTS `employees` (
+  `id` BIGINT NOT NULL,
+  `nombre` VARCHAR(255) NOT NULL,
+  `apPaterno` VARCHAR(255) NOT NULL,
+  `apMaterno` VARCHAR(255) NOT NULL,
+  `telefono` VARCHAR(50) NOT NULL,
+  `fechaNacimiento` VARCHAR(50) NOT NULL,
+  `area` VARCHAR(100) NOT NULL,
+  `created_at` DATETIME NOT NULL,
+  `updated_at` DATETIME DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB;
